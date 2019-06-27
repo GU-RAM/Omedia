@@ -1,0 +1,286 @@
+/*------ Web Fonts ------*/
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../Fonts/ProximaNova-Regular.eot');
+	src: url('../Fonts/ProximaNova-Regular.ttf') format('truetype'),
+	     url('../Fonts/ProximaNova-Regular.woff') format('woff'),
+	     url('../Fonts/ProximaNova-Regular.woff2') format('woff2')
+}
+
+/*---- Base Layout----*/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font: 14px/1.5 Proxima Nova, sans-serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+ul {
+	padding-left: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: orange;
+	text-decoration: none;
+} 
+
+/*---- main header -----*/
+
+.main-header {
+	height: 630px;
+	background: url(../images/Artboard-2.jpg) no-repeat center/cover,
+	            url(../images/Layer-2.png),
+	            #000;            
+}
+
+.main-header a {
+	color: #fff;
+}
+
+.navigation li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.site_destination {
+	margin-top: 150px;
+	font-size: 32px;
+	font-weight: bold;
+	color: #fff;
+}
+
+/*---- home main -----*/
+
+main {
+	margin-bottom: 125px;
+}
+
+main h3 {
+	font-size: 18px;
+	color: #0a3769;
+	margin: 20px 0;
+	font-weight: bold;
+}
+
+
+/*----services -----*/
+
+.box {
+	position: relative;
+}
+
+.home-h1 {
+	color: #0a3769;
+	margin: 40px auto;
+	text-align: center;
+	font-size: 32px;
+}
+
+.line-under {
+	border: 2px solid #6fdeff;
+	border-radius: 5px;
+	position: absolute;
+	width: 7%;
+	left: 46%;
+	bottom: 30px;
+}
+
+.services {
+	padding: 10px;
+	text-align: center;
+	/*height: 350px;*/
+}
+
+.services:hover {
+	background-color: #e0f8ff;
+	cursor: pointer;
+}
+
+
+.services-img {
+	height: 115px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+
+/*-------- why trade with brockers --------*/
+
+.wtwb_img1 {
+	transform: skewX(-15deg);
+	height: 258px;
+	/*background: url(../images/wtwb_img1.jpg) no-repeat center/cover;*/
+}
+
+
+/*----- cryptx system ------*/
+
+.cryptx-system {
+	background-color: #eaf9ff;
+	margin-top: 50px;
+}
+
+.services {
+	color: #47596d;
+}
+
+/*-------- main footer ----------*/
+
+.main-footer {
+	background-color: #1b3568;
+	color: #97a8c9;
+	padding-top: 70px;
+	font-size: 14px;
+}
+
+.main-footer a {
+	color: #97a8c9;
+}
+
+.main-footer h4 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.line-under2 {
+	border: 1px solid #12cbff;
+	width: 30px;
+	margin-bottom: 10px;
+}
+
+.guro {
+	color: blue;
+}
+
+.copyright {
+	border-right: 1px solid #12cbff; 
+	margin-right: 10px;
+	padding-right: 8px;
+}
+
+
+@media only screen and (min-width: 768px) {
+	.site_destination,
+	..home-h1 {
+		font-size: 40px;
+	}
+
+	.cryptx-system {
+	  margin-top: 70px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+	.site_destination {
+		font-size: 46px;
+	}
+
+	.home-h1 {
+		font-size: 48px;
+		margin: 70px auto;
+	}
+
+	.line-under {
+		border-width: 3px;
+		bottom: 60px;
+    }
+
+	figure {
+		position: relative;
+		margin-bottom: 160px;
+	}
+
+	.cryptx-figcaption h3 {
+		color: #0a3769;
+		font-size: 18px;
+	}
+
+	.system-type-1 {
+		position: absolute;
+		width: 220px;
+		top: -30px;
+		left: -110px;
+	}
+
+	.top-left-line {
+		position: absolute;
+		height: 115px;
+		width: 50px;
+		border-right: 2px solid #0ec9fb;
+		border-top: 2px solid #0ec9fb;
+		top: 0;
+		left: 120px;
+	}
+
+	.system-type-2 {
+		position: absolute;
+		width: 190px;
+		top: -30px;
+		right: -105px;
+	}
+
+	.top-right-line {
+		position: absolute;
+		height: 180px;
+		width: 60px;
+		border-left: 2px solid #0ec9fb;
+		border-top: 2px solid #0ec9fb;
+		top: 0px;
+		right: 95px;
+	}
+
+	.system-type-3 {
+		position: absolute;
+		width: 220px;
+		bottom: -110px;
+		right: -110px;
+	}
+
+	.bottom-right-line {
+		position: absolute;
+		height: 160px;
+		width: 60px;
+		border-left: 2px solid #0ec9fb;
+		border-bottom: 2px solid #0ec9fb;
+		bottom: 0px;
+		right: 120px;
+	}
+
+	.system-type-4 {
+		position: absolute;
+		width: 210px;
+		bottom: -100px;
+		left: -100px;
+	}
+
+	.bottom-left-line {
+		position: absolute;
+		height: 120px;
+		width: 60px;
+		border-right: 2px solid #0ec9fb;
+		border-bottom: 2px solid #0ec9fb;
+		bottom: 25px;
+		left: 140px;
+	}
+
+	.cryptx-system {
+	  margin-top: 140px;
+    }
+}
