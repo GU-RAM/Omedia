@@ -14,7 +14,7 @@
 }
 
 body {
-	font: 14px/1.5 Proxima Nova, sans-serif;
+	font: 1em/1.5 'Proxima Nova', sans-serif;
 }
 
 img {
@@ -41,47 +41,104 @@ a:hover {
 /*---- main header -----*/
 
 .main-header {
-	height: 630px;
 	background: url(../images/Artboard-2.jpg) no-repeat center/cover,
 	            url(../images/Layer-2.png),
-	            #000;            
+	            #000; 
+	padding: 20px; 
+	font-size: 14px;                      
 }
 
 .main-header a {
 	color: #fff;
 }
 
+.main-header a:hover {
+	padding-bottom: 5px;
+	border-bottom: 2px solid #0ecafc;
+}
+
 .navigation li {
+	display:  block;
+	margin-left: 15px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.search-col {
+	position: relative;
+	height: 52px;
+}
+
+.m-header-input {
+	display: none;
+}
+
+.search-form {
+	display: flex;
+	padding: 2px;
+	flex-direction: row;
+	height: 42px;
+	width: 200px;
+	border-width: 8px;
+	border-color: transparent;
+	position: absolute;
+	top: -10.5px;
+	right: 50%;
+}
+
+.search-input {
 	display: inline-block;
-	margin-right: 20px;
+	flex-grow: 2;
+	background-color: #0a3769;
+	color: #fff;
+	border: none;
+	padding-left: 10px;
+}
+
+.m-header-btn {
+	color: #c6d1dd;
+	background-color: transparent; 
+	border: 0;
+	padding: 2px;
+}
+
+.search-btn {
+	color: #6edeff;
+	background-color: #0a3769;
 }
 
 .site_destination {
-	margin-top: 150px;
-	font-size: 32px;
+	margin-top: 50px;
+	font-size: 22px;
 	font-weight: bold;
 	color: #fff;
 }
 
-/*---- home main -----*/
-
-main {
-	margin-bottom: 125px;
+.power {
+	background-color: #045885;
+	padding: 0 1%;
 }
 
-main h3 {
+.success {
+	background-color: #013e6a;
+	padding: 0 1%;
+}
+
+/*---- home main -----*/
+
+.main-wrapper {
+	margin-bottom: 30px;
+}
+
+.main-wrapper h3 {
 	font-size: 18px;
+	line-height: 1.2;
 	color: #0a3769;
-	margin: 20px 0;
+	margin-top: 8px;
 	font-weight: bold;
 }
 
-
 /*----services -----*/
-
-.box {
-	position: relative;
-}
 
 .home-h1 {
 	color: #0a3769;
@@ -102,7 +159,7 @@ main h3 {
 .services {
 	padding: 10px;
 	text-align: center;
-	/*height: 350px;*/
+	height: 340px;
 }
 
 .services:hover {
@@ -118,15 +175,13 @@ main h3 {
 	justify-content: center;
 }
 
-
-/*-------- why trade with brockers --------*/
-
-.wtwb_img1 {
-	transform: skewX(-15deg);
-	height: 258px;
-	/*background: url(../images/wtwb_img1.jpg) no-repeat center/cover;*/
+.learn-more {
+	display: none;
 }
 
+.services:hover>.learn-more {
+	display: block;
+}
 
 /*----- cryptx system ------*/
 
@@ -138,6 +193,59 @@ main h3 {
 .services {
 	color: #47596d;
 }
+
+/*-------- why trade with brockers --------*/
+
+.wtwb_images {
+	position: relative;
+}
+
+
+.wtwb_images figure {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	margin-bottom: 0;
+	background-color: #00cdaa;
+}
+
+.wtwb-m-t {
+	margin-bottom: 15px; 
+}
+
+.triangle {
+	position: absolute;
+	border-bottom: 160px solid transparent;
+    border-left: 50px solid #fff;
+	top: 0;
+	left: 0;
+}
+
+.triangle2 {
+	position: absolute;
+	border-top: 160px solid transparent;
+    border-right: 50px solid #fff;
+	bottom: 0;
+	right: 0;
+}
+
+.wtwb-on-img1 {
+	position: absolute;
+	max-width: 30%;
+	top: -5px;
+	left: 5px;
+}
+
+.wtwb-on-img2 {
+	position: absolute;
+	max-width: 30%;
+	bottom: -5px;
+	right: 5px;
+}
+
+/*-------- end of main  ----------*/
+
 
 /*-------- main footer ----------*/
 
@@ -157,6 +265,13 @@ main h3 {
 	font-weight: bold;
 	color: #fff;
 }
+.main-footer ul {
+	padding-bottom: 10px;
+}
+
+.main-footer li {
+	padding-bottom: 5px;
+}
 
 .line-under2 {
 	border: 1px solid #12cbff;
@@ -164,9 +279,6 @@ main h3 {
 	margin-bottom: 10px;
 }
 
-.guro {
-	color: blue;
-}
 
 .copyright {
 	border-right: 1px solid #12cbff; 
@@ -174,21 +286,107 @@ main h3 {
 	padding-right: 8px;
 }
 
+.footer-image {
+	height: 35px;
+	background-image: url(../images/footer-img.png);
+}
+
+@media only screen and (min-width: 370px) {
+	.triangle {
+		border-bottom: 200px solid transparent;
+	    border-left-width: 55px;
+    }
+
+    .triangle2 {
+		border-top: 200px solid transparent;
+	    border-right-width: 55px;
+    }
+}
+
+@media only screen and (min-width: 440px) {
+	.triangle {
+		border-bottom: 260px solid transparent;
+	    border-left-width: 55px;
+    }
+
+    .triangle2 {
+		border-top: 260px solid transparent;
+	    border-right-width: 55px;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+
+	.navigation li {
+    	display: inline-block;
+    }
+
+    .site_destination {
+	   margin: 80px 0;
+	   font-size: 32px;
+    }
+
+    .services {
+	   height: 400px;
+    }
+
+	.wtwb-m-t {
+	   margin-bottom: 30px; 
+    }
+
+	.triangle {
+		border-bottom: 260px solid transparent;
+	    border-left-width: 60px;
+    }
+
+    .triangle2 {
+		border-top: 260px solid transparent;
+	    border-right-width: 60px;
+    }
+}
+
 
 @media only screen and (min-width: 768px) {
+    .search-form {
+    	width: 350px;
+    }
 	.site_destination,
-	..home-h1 {
+	.home-h1 {
 		font-size: 40px;
 	}
 
-	.cryptx-system {
-	  margin-top: 70px;
+	.main-wrapper h3 {
+		margin: 20px 0;
+	}
+
+    .wtwb-m-t,
+    .wtwb-m-img {
+	    margin-bottom: 40px; 
+    }
+
+    .triangle {
+		border-bottom: 167px solid transparent;
+	    border-left-width: 50px;
+    }
+
+    .triangle2 {
+		border-top: 170px solid transparent;
+	    border-right-width: 50px;
+    }
+
+    .main-footer {
+        margin-top: 100px;	
     }
 }
 
 @media only screen and (min-width: 992px) {
 
+	.navigation {
+	    display: inline-block;
+    }
+
 	.site_destination {
+		margin-top: 130px;
 		font-size: 46px;
 	}
 
@@ -197,26 +395,51 @@ main h3 {
 		margin: 70px auto;
 	}
 
+	.services {
+	    height: 355px;
+    }
+
 	.line-under {
 		border-width: 3px;
 		bottom: 60px;
     }
 
-	figure {
-		position: relative;
-		margin-bottom: 160px;
-	}
+    .positioning-lines {
+    	position: relative;
+    	margin-bottom: 160px;
+    }
 
 	.cryptx-figcaption h3 {
 		color: #0a3769;
 		font-size: 18px;
 	}
 
-	.system-type-1 {
-		position: absolute;
-		width: 220px;
-		top: -30px;
-		left: -110px;
+	.hexagon {
+		position: relative;
+		width: 12px; 
+		height: 6.93px;
+		background-color: #ff5050;
+		margin: 3.46px 0;
+	}
+
+	.hexagon:before,
+	.hexagon:after {
+	    content: "";
+	    position: absolute;
+	    width: 0;
+	    border-left: 6px solid transparent;
+	    border-right: 6px solid transparent;
+	}
+
+	.hexagon:before {
+	    bottom: 100%;
+	    border-bottom: 3.46px solid #ff5050;
+	}
+
+	.hexagon:after {
+	    top: 100%;
+	    width: 0;
+	    border-top: 3.46px solid #ff5050;
 	}
 
 	.top-left-line {
@@ -229,11 +452,17 @@ main h3 {
 		left: 120px;
 	}
 
-	.system-type-2 {
+	.hex1-wrap {
 		position: absolute;
-		width: 190px;
-		top: -30px;
-		right: -105px;
+		top: -6px;
+		left: 106px;
+	}
+
+	.system-type-1 {
+		position: absolute;
+		width: 220px;
+		top: -5.5%;
+		left: -119px;
 	}
 
 	.top-right-line {
@@ -246,11 +475,17 @@ main h3 {
 		right: 95px;
 	}
 
-	.system-type-3 {
+	.hex2-wrap {
 		position: absolute;
-		width: 220px;
-		bottom: -110px;
-		right: -110px;
+		top: -6px;
+		right: 80px;
+	}
+
+	.system-type-2 {
+		position: absolute;
+		width: 190px;
+		top: -30px;
+		right: -115px;
 	}
 
 	.bottom-right-line {
@@ -263,11 +498,17 @@ main h3 {
 		right: 120px;
 	}
 
-	.system-type-4 {
+	.hex3-wrap {
 		position: absolute;
-		width: 210px;
-		bottom: -100px;
-		left: -100px;
+		bottom: -5px;
+		right: 105px;
+	}
+
+	.system-type-3 {
+		position: absolute;
+		width: 220px;
+		bottom: -117px;
+		right: -125px;
 	}
 
 	.bottom-left-line {
@@ -280,7 +521,70 @@ main h3 {
 		left: 140px;
 	}
 
-	.cryptx-system {
-	  margin-top: 140px;
+	.hex4-wrap {
+		position: absolute;
+		bottom: 19px;
+		left: 125px;
+	}
+
+	.system-type-4 {
+		position: absolute;
+		width: 210px;
+		bottom: -93px;
+		left: -100px;
+	}
+
+    .wtwb-m-t,
+    .wtwb-m-img {
+	   margin-bottom: 60px; 
+    }
+
+	.triangle {
+		border-bottom: 275px solid transparent;
+	    border-left: 55px solid #fff;
+    }
+
+    .triangle2 {
+		border-top: 275px solid transparent;
+	    border-right: 55px solid #fff;
+    }
+
+    .wtwb-on-img1 {
+	    position: absolute;
+	    max-width: 30%;
+	    top: -5px;
+	    left: 5px;
+    }
+
+    .wtwb-on-img2 {
+	    position: absolute;
+	    max-width: 30%;
+	    bottom: -5px;
+	    right: 5px;
+    }
+
+    .main-footer {
+        margin-top: 130px;	
+    }
+
+    .main-footer ul {
+	    padding-bottom: 20px;
+    }
+
+    .main-footer li {
+	    padding-bottom: 10px;
     }
 }
+
+@media only screen and (min-width: 1200px) {
+	.site_destination {
+	   margin: 160px 0;
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+	.site_destination {
+	   margin: 185px 0;
+	}
+}
+
