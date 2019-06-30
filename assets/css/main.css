@@ -8,17 +8,29 @@
 	     url('../Fonts/ProximaNova-Regular.woff2') format('woff2')
 }
 
+@font-face {
+	font-family: 'abril-fatface';
+	src: url('../Fonts/AbrilFatface-Regular.eot');
+	src: url('../Fonts/AbrilFatface-Regular.ttf') format('truetype'),
+	     url('../Fonts/AbrilFatface-Regular.woff') format('woff'),
+	     url('../Fonts/AbrilFatface-Regular.woff2') format('woff2')
+}
+
 /*---- Base Layout----*/
 * {
 	box-sizing: border-box;
 }
 
 body {
-	font: 1em/1.5 'Proxima Nova', sans-serif;
+	font: 1em/1.5 'Proxima Nova';
 }
 
 img {
 	max-width: 100%;
+}
+
+h1 {
+	font-family: 'abril-fatface';
 }
 
 ul li {
@@ -55,6 +67,7 @@ a:hover {
 .main-header a:hover {
 	padding-bottom: 5px;
 	border-bottom: 2px solid #0ecafc;
+	color: #c6d1dd;
 }
 
 .navigation li {
@@ -78,7 +91,7 @@ a:hover {
 	padding: 2px;
 	flex-direction: row;
 	height: 42px;
-	width: 200px;
+	width: 145px;
 	border-width: 8px;
 	border-color: transparent;
 	position: absolute;
@@ -108,9 +121,9 @@ a:hover {
 }
 
 .site_destination {
-	margin-top: 50px;
+	font-family: 'abril-fatface';
 	font-size: 22px;
-	font-weight: bold;
+	margin-top: 50px;
 	color: #fff;
 }
 
@@ -144,7 +157,7 @@ a:hover {
 	color: #0a3769;
 	margin: 40px auto;
 	text-align: center;
-	font-size: 32px;
+	font-size: 25px;
 }
 
 .line-under {
@@ -348,7 +361,7 @@ a:hover {
 
 @media only screen and (min-width: 768px) {
     .search-form {
-    	width: 350px;
+    	width: 320px;
     }
 	.site_destination,
 	.home-h1 {
@@ -386,7 +399,7 @@ a:hover {
     }
 
 	.site_destination {
-		margin-top: 130px;
+		margin-top: 110px;
 		font-size: 46px;
 	}
 
@@ -508,7 +521,7 @@ a:hover {
 		position: absolute;
 		width: 220px;
 		bottom: -117px;
-		right: -125px;
+		right: -120px;
 	}
 
 	.bottom-left-line {
@@ -531,7 +544,7 @@ a:hover {
 		position: absolute;
 		width: 210px;
 		bottom: -93px;
-		left: -100px;
+		left: -92px;
 	}
 
     .wtwb-m-t,
@@ -578,13 +591,14 @@ a:hover {
 
 @media only screen and (min-width: 1200px) {
 	.site_destination {
-	   margin: 160px 0;
+	   margin: 135px 0;
 	}
 }
 
-@media only screen and (min-width: 1400px) {
+
+@media only screen and (min-width: 1440px) {
 	.site_destination {
-	   margin: 185px 0;
+	   margin: 165px 0;
 	}
 }
 
