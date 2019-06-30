@@ -1,5 +1,5 @@
-let guro =[];
-let mari = document.querySelectorAll('a');
+let ankerList = [];
+let anker = document.querySelectorAll('a');
 
 document.querySelector('.m-header-btn').addEventListener('mouseover', () => {
 
@@ -10,8 +10,8 @@ document.querySelector('.m-header-btn').addEventListener('mouseover', () => {
 
 	// --------- change a color in header list
 	for(let i =0; i<= 7; i++) {
-	   guro.push(mari[i]);
-	   guro[i].style.color = '#3d719f';
+	   ankerList.push(anker[i]);
+	   ankerList[i].style.color = '#3d719f';
    }
 });
 
@@ -25,8 +25,8 @@ document.querySelector('.m-header-input').addEventListener('mouseout', () => {
 
     // --------- bring back a color in header list
 	for(let i =0; i<= 7; i++) {
-	   guro.push(mari[i]);
-	   guro[i].style.color = '#fff';
+	   ankerList.push(anker[i]);
+	   ankerList[i].style.color = '#fff';
    }
 });
 
